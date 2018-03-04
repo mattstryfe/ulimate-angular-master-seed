@@ -1,3 +1,7 @@
 <div class="root">
-  Hello world!
+  <app-nav user="$ctrl.user" on-logout="$ctrl.logout();"></app-nav>
+  <app-sidebar></app-sidebar>
+  <div class="app">
+    <div ui-view></div>
+  </div>
 </div>
